@@ -43,11 +43,11 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icon-192x192.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </head>
-      <body className={`font-sans antialiased`}>
+      <body className={`font-sans antialiased`} suppressHydrationWarning={true}>
         {children}
-        <ServiceWorkerRegister />
-        <Analytics />
+        {/* <ServiceWorkerRegister /> */}
+        {/* <Analytics /> */}
       </body>
     </html>
-  )
+  );
 }
